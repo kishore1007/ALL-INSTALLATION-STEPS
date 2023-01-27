@@ -1,0 +1,15 @@
+sudo yum install -y gcc-c++ make
+sudo rm -R /var/cache/yum/x86_64/2/nodesource/
+curl -sL https://rpm.nodesource.com/setup_16.x | sudo -E bash -
+sudo yum install -y nodejs
+sudo npm install -g @angular/cli
+sudo npm install
+
+sudo yum -y install httpd
+sudo systemctl start httpd
+sudo systemctl enable httpd
+
+sudo mv angularCalc/ /var/www/html
+
+sudo vi /etc/httpd/conf/httpd.conf
+>>>Document root "/var/www/html/angularCalc"
