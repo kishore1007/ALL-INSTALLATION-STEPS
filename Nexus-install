@@ -12,6 +12,11 @@ Once the archive is downloaded extract it
 
 The bin folder contains the generic startup scripts for Unix-like platforms called nexus
 	> ~/nexus-2.14.18-01/bin/nexus start
+	
+	
+	edit files under
+	1-	pom.xml
+	2-   sudo vi /usr/share/maven/conf/settings.xml
 
 
 
